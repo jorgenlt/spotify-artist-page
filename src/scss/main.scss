@@ -103,6 +103,64 @@
     background-color: lighten($black, 5);
 }
 
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    background-image: url(http://www.aqueenofmagic.com/wp-content/uploads/2021/04/Queen-group-studio-1982.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -75px;
+}
+
+#nav-back-forward {
+    margin: 20px 30px;
+    display: flex;
+    gap: 10px;
+
+    i {
+        font-size: 20px;
+    }
+}
+
+#nav-left, #nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #00000063;
+    border-radius: 100%;
+    cursor: pointer;
+
+    &:hover {
+    background-color: #5a5a5a63;
+    transition: 300ms;
+    }
+}
+
+#artist-title {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    h1 {
+        font-size: 60px;
+        font-weight: 800;
+        margin: 10px 0px;
+    }
+
+    span {
+        font-weight: 500;
+    }
+
+    i {
+        padding-right: 5px;
+        font: 20px;
+    }
+}
+
 #playbar {
     color: $playbar;
     height: 80px;
@@ -114,6 +172,19 @@
     justify-content: space-between;
     align-items: center;
 
+    i {
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.05;
+            color: $white;
+            transition: 100ms;
+        }
+    }
+}
+
+#playbar-start {
+    width: 181px;
 }
 
 #playbar-centre {
@@ -132,16 +203,6 @@
     .fa-circle-pause {
         font-size: 28px;
     }
-
-    i {
-        cursor: pointer;
-
-        &:hover {
-            scale: 1.05;
-            color: $white;
-            transition: 300ms;
-        }
-    }
 }
 
 #track-slider {
@@ -157,5 +218,22 @@
 background: linear-gradient(90deg, rgba(255,255,255,1) 28%, rgba(194,194,194,1) 28%);
         
         height: 3px;
+    }
+}
+
+#playbar-end{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+
+    i {
+        margin-left: 10px;
+    }
+
+    #volume-slider {
+        margin-left: 10px;
+        height: 3px;
+        width: 70px;
+        background-color: $white;
     }
 }
