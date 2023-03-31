@@ -5,11 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify Artist Page</title>
 </head>
 <body>
-    <div></div>
+    <div id="status-bar">
+        <div><i class="fa-brands fa-spotify cursor-pointer"></i></div>
+        <div class="cursor-pointer">Spotify</div>
+        <div id="status-right"><i class="fa-solid fa-window-minimize"></i><i class="fa-regular fa-window-restore"></i><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    
+    <div id="container">
+        <div id="nav">
+            <div id="nav-links">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>Home
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass"></i>Search
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-music"></i>Your Library
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-square-plus"></i>Create Playlist
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-heart"></i>Liked Songs
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-podcast"></i>Your Episodes
+                    </li>
+                </ul>
+            </div>
+            <div id="playlists">
+                <ul>
+                    <li>Cool Indie Mix</li>
+                    <li>Chillout Lounge Vibes</li>
+                    <li>90s Throwback Jams</li>
+                    <li>New Music Friday</li>
+                    <li>Feel-Good Pop Hits</li>
+                    <li>Summer BBQ Party</li>
+                    <li>Workout Motivation Mix</li>
+                    <li>Acoustic Covers</li>
+                    <li>Throwback Hip-Hop Classics</li>
+                    <li>EDM Dance Party</li>
+                    <li>Jazz & Blues Essentials</li>
+                    <li>Country Road Trip</li>
+                    <li>Classical for Concentration</li>
+                    <li>Sad Songs for Rainy Days</li>
+                    <li>80s Power Ballads</li>
+                    <li>Latin Fiesta Mix</li>
+                    <li>R&B Slow Jams</li>
+                    <li>Rock Classics Revival</li>
+                    <li>Electronic Chillout</li>
+                    <li>Alternative Essentials</li>
+                    <li>Movie Soundtrack Favorites</li>
+                    <li>Pop Punk Party</li>
+                    <li>Motown Magic</li>
+                    <li>Classy Cocktail Hour</li>
+                    <li>Throwback Disco Fever</li>
+                    <li>Mellow Beats for Studying</li>
+                    <li>80s New Wave Nostalgia</li>
+                    <li>Heavy Metal Thunder</li>
+                    <li>Blues Rock Anthems</li>
+                    <li>Electronic Dance Hits</li>
+                    <li>Golden Oldies Mix</li>
+                    <li>Singer-Songwriter Showcase</li>
+                    <li>Rap & Hip-Hop Heat</li>
+                    <li>Soulful Sunday Brunch</li>
+                    <li>Beach Party Vibes</li>
+                    <li>Country Summer Fun</li>
+                    <li>Classical for Relaxation</li>
+                    <li>Smooth Jazz Soirée</li>
+                    <li>Top 40 Pop Hits</li>
+                    <li>Rockin' Road Trip</li>
+                    <li>Electronic Bass Boost</li>
+                    <li>Indie Rock Discoveries</li>
+                    <li>Musical Theater Favorites</li>
+                    <li>90s R&B Slow Jams</li>
+                    <li>Chill Indie Folk</li>
+                    <li>Throwback Funk Grooves</li>
+                    <li>Instrumental Study Beats</li>
+                    <li>Hardcore Punk Rock</li>
+                    <li>Reggae Island Jam</li>
+                    <li>Motivational Workout Mix</li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div id="main">
+            
+        </div>
+    </div>
 
+    <div id="playbar">
+        <div></div>
+        <div id="playbar-centre">
+            <div id="track-controls"><i class="fa-solid fa-shuffle"></i><i class="fa-solid fa-backward-step"></i><i class="fa-solid fa-circle-pause"></i><i class="fa-solid fa-forward-step"></i><i class="fa-solid fa-arrows-rotate"></i></div>
+            <div id="track-slider">
+                0:47<div id="slider"></div>3:36
+            </div>
+        </div>
+        <div></div>
+    </div>
+    
     <script src="./javascript/index.js"></script>
 </body>
 </html>
