@@ -13,6 +13,10 @@ body {
   cursor: pointer;
 }
 
+.display-none {
+  display: none !important;
+}
+
 li {
   list-style: none;
 }
@@ -216,7 +220,7 @@ h2 {
   color: white;
 }
 
-#artist-nav-play {
+.artist-play {
   cursor: pointer;
   color: #070707;
   display: flex;
@@ -226,8 +230,9 @@ h2 {
   width: 50px;
   background-color: #25e067;
   border-radius: 50%;
+  font-size: 20px;
 }
-#artist-nav-play:hover {
+.artist-play:hover {
   scale: 1.05;
   background-color: #52e686;
 }
@@ -317,15 +322,88 @@ h2 {
   font-size: 12px;
 }
 
+#discography-btns {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.discography-btn {
+  font-size: 11px;
+  cursor: pointer;
+  background-color: #262626;
+  padding: 7px 10px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.discography-btn:hover {
+  background-color: #303030;
+}
+
+.white-bg {
+  background-color: #f5f5f5;
+  color: #070707;
+}
+.white-bg:hover {
+  background-color: #f5f5f5;
+}
+
 .album {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: #212121;
+}
+.album:hover {
+  background-color: #2d2d2d;
+  transition: 500ms;
+}
+.album:hover .album-play {
+  opacity: 1;
+  transform: none;
+}
+.album:hover img {
+  box-shadow: 1px 14px 15px -1px rgb(0, 0, 0);
 }
 .album img {
   height: 150px;
+  border-radius: 5px;
+}
+
+.album > div {
+  position: relative;
+}
+
+.album-list {
+  display: flex;
+  gap: 20px;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.album-title {
+  font-weight: 600;
+  margin: 10px 0px 5px 0px;
+}
+
+.album-release {
+  color: #adadad;
+}
+
+.album-play {
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+  transition: 300ms ease-in;
+  opacity: 0;
 }
 
 #playbar {
