@@ -101,6 +101,8 @@
     width: 80%;
     height: 100%;
     background-color: lighten($black, 5);
+    overflow: scroll;
+    height: calc(100% - 65px);
 }
 
 #banner {
@@ -158,6 +160,156 @@
     i {
         padding-right: 5px;
         font: 20px;
+    }
+}
+
+#artist-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+
+    i {
+        font-size: 20px;
+    }
+
+    .fa-ellipsis {
+        color: $nav;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+#artist-nav-play {
+    cursor: pointer;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: $green;
+    border-radius: 50%;
+
+    &:hover {
+        scale: 1.05;
+        background-color: lighten($green, 10);
+    }
+}
+
+#follow-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+    width: 40px;
+    height: 20px;
+    padding: 3px 15px;
+    border: 1px solid $nav;
+    border-radius: 3px;
+
+    &:hover {
+        border-color: white;
+    }
+}
+
+#popular {
+    padding: 0px 30px;
+    font-size: 12px;
+    color: $nav;
+
+    h2 {
+        margin: 0px;
+    }
+
+    img {
+        height: 35px;
+    }
+
+    span {
+        margin: 0px 20px;
+    }
+
+    ul {
+        padding: 0px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        padding: 7px 0px;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: lighten($black, 15);
+
+            .played {
+                color: $white;
+            }
+
+            i {
+                color: $nav;
+            }
+        }
+    }
+
+    .song-title {
+        color: $white;
+        font-weight: 600;
+    }
+
+    .fa-heart {
+        margin-left: 160px;
+        font-size: 16px;
+        color: lighten($black, 5);
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .fa-ellipsis {
+        font-size: 16px;
+        color: lighten($black, 5);
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .length {
+        margin-left: 40px;
+    }
+
+    #see-more {
+        font-weight: 700;
+        font-size: 10px;
+        margin: 10px 20px;
+
+        &:hover {
+            color: $white;
+        } 
+    }
+}
+
+#discography {
+    padding: 0px 30px;
+    font-size: 12px;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+
+    img {
+        height: 150px;
     }
 }
 
