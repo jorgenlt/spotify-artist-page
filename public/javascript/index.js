@@ -54,3 +54,19 @@ compilationsBtn.addEventListener('click', () => {
     compilations.classList.remove('display-none');
 });
 
+
+// fade out ONLY banner-bg on scroll (keep text)
+
+const main = document.querySelector('#main');
+const bannerBg = document.querySelector('#banner-bg');
+
+main.addEventListener('scroll', () => {
+    let scrolled = main.scrollTop;
+    let bannerBgHight = bannerBg.offsetHeight;
+    let opacity = 1 - (scrolled * 2.2) / bannerBgHight;
+    bannerBg.style.opacity = opacity;
+    bannerBg.style.height = `${500 - scrolled}px`
+});
+
+
+

@@ -92,7 +92,7 @@ h2 {
 #nav {
   font-size: 12px;
   color: #adadad;
-  width: 20%;
+  width: 290px;
   height: 100%;
   max-height: 100%;
   background-color: #070707;
@@ -155,7 +155,11 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px;
+  position: relative;
+}
+
+#banner-bg {
+  height: 500px;
   max-width: 1020px;
   background-image: url(http://www.aqueenofmagic.com/wp-content/uploads/2021/04/Queen-group-studio-1982.jpg);
   background-repeat: no-repeat;
@@ -164,9 +168,12 @@ h2 {
 }
 
 #nav-back-forward {
-  margin: 20px 30px;
   display: flex;
   gap: 10px;
+  position: fixed;
+  top: 50px;
+  left: 320px;
+  z-index: 1;
 }
 #nav-back-forward i {
   font-size: 20px;
@@ -178,19 +185,21 @@ h2 {
   justify-content: center;
   height: 40px;
   width: 40px;
-  background-color: rgba(0, 0, 0, 0.3882352941);
+  background-color: rgba(0, 0, 0, 0.5607843137);
   border-radius: 100%;
   cursor: pointer;
 }
 #nav-left:hover, #nav-right:hover {
-  background-color: rgba(90, 90, 90, 0.3882352941);
+  background-color: rgba(90, 90, 90, 0.8392156863);
   transition: 300ms;
 }
 
 #artist-title {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
 }
 #artist-title h1 {
   font-size: 60px;
@@ -319,7 +328,7 @@ h2 {
 }
 
 #discography, #featuring, #fans-also-like, #about {
-  padding: 0px 30px;
+  padding-left: 30px;
   font-size: 12px;
 }
 
@@ -382,6 +391,12 @@ h2 {
 .album-list {
   display: flex;
   gap: 20px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.album-list::-webkit-scrollbar {
+  display: none;
 }
 
 .album-info {
