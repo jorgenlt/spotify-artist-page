@@ -110,6 +110,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 400px;
+    max-width: 1020px;
     background-image: url(http://www.aqueenofmagic.com/wp-content/uploads/2021/04/Queen-group-studio-1982.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -297,7 +298,7 @@
     }
 }
 
-#discography {
+#discography, #featuring, #fans-also-like, #about {
     padding: 0px 30px;
     font-size: 12px;
 }
@@ -341,7 +342,7 @@
     background-color: lighten($black, 10);
     
     &:hover {
-        background-color: lighten($black, 15);
+        background-color: lighten($black, 20);
         transition: 500ms;
 
         .album-play {
@@ -392,6 +393,78 @@
     transition: 300ms ease-in;
     opacity: 0;
 }
+
+#featuring, #fans-also-like, #about {
+    h2 {
+        margin-top: 40px;
+    }
+}
+
+#fans-also-like {
+    img {
+        border-radius: 50%;
+    }
+}
+
+#about {
+    padding-bottom: 100px;
+}
+
+#about-img {
+    position: relative;
+    max-width: 950px;
+    height: 450px;
+    background-color: #999999;
+    background-image: url("https://consequenceofsound.net/wp-content/uploads/2019/03/queen-1974.jpg?quality=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    transition: 500ms;
+
+    span {
+        font-weight: 700;
+    }
+
+    p {
+        font-weight: 600;
+    }
+
+    &:hover {
+        scale: 1.01;
+        transition: 400ms;
+    }
+}
+
+#in-the-world {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #0d72ea;
+    border-radius: 50%;
+
+    span:first-child {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    span:nth-child(2) {
+        font-weight: 600;
+        font-size: 9px;
+    }
+}
+
+// playbar
 
 #playbar {
     color: $playbar;
