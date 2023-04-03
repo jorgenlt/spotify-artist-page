@@ -2,6 +2,13 @@
 @import './base';
 @import './fonts';
 
+#container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 25px);
+}
+
+// STATUS BAR (top)
 #status-bar {
     display: flex;
     align-items: center;
@@ -23,26 +30,25 @@
             cursor: pointer;
         }
     }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
-#container {
-    display: flex;
-    width: 100%;
-    height: calc(100vh - 25px);
-    // min-height: 100vh;
-}
-
+// NAVIGATION AND PLAYLISTS (left)
 #nav {
     font-size: 12px;
     color: $nav;
-    width: 290px;
+    width: 240px;
+    min-width: 240px;
     height: 100%;
     max-height: 100%;
     background-color: $black;
 }
 
 #nav-links {
-    // height: 250px;
     border-bottom: 1px solid darken($white, 60);
     font-weight: 600;
     margin: 0px 20px;
@@ -97,14 +103,17 @@
     
 }
 
+
+// MAIN (center)
 #main {
-    width: 80%;
+    width: 100%;
     height: 100%;
     background-color: lighten($black, 5);
     overflow: scroll;
     height: calc(100% - 65px);
 }
 
+// banner
 #banner {
     display: flex;
     flex-direction: column;
@@ -122,12 +131,11 @@
 }
 
 #nav-back-forward {
-    // margin: 20px 30px;
     display: flex;
     gap: 10px;
     position: fixed;
     top: 50px;
-    left:320px;
+    left:280px;
     z-index: 1;
     
     i {
@@ -186,6 +194,7 @@
     
     .fa-ellipsis {
         color: $nav;
+        cursor: pointer;
         
         &:hover {
             color: white;
@@ -229,6 +238,7 @@
     }
 }
 
+// popular
 #popular {
     padding: 0px 30px;
     font-size: 12px;
@@ -272,10 +282,11 @@
     .song-title {
         color: $white;
         font-weight: 600;
+        width: 260px;
     }
     
     .fa-heart {
-        margin-left: 160px;
+        margin-left: 80px;
         font-size: 16px;
         color: lighten($black, 5);
         
@@ -308,6 +319,7 @@
     }
 }
 
+// discography
 #discography, #featuring, #fans-also-like, #about {
     padding-left: 30px;
     font-size: 12px;
@@ -361,7 +373,7 @@
         }
 
         img {
-            box-shadow: 1px 14px 15px -1px rgba(0,0,0,1);
+            box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
         }
     }
 
@@ -412,18 +424,21 @@
     opacity: 0;
 }
 
+// featuring
 #featuring, #fans-also-like, #about {
     h2 {
         margin-top: 40px;
     }
 }
 
+// fans also like
 #fans-also-like {
     img {
         border-radius: 50%;
     }
 }
 
+// about
 #about {
     padding-bottom: 100px;
 }
@@ -482,8 +497,8 @@
     }
 }
 
-// playbar
 
+// PLAYBAR
 #playbar {
     color: $playbar;
     height: 80px;
