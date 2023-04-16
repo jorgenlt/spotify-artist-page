@@ -389,6 +389,7 @@ h2 {
 }
 .album img {
   height: 150px;
+  width: 150px;
   border-radius: 5px;
 }
 
@@ -416,6 +417,10 @@ h2 {
 .album-title {
   font-weight: 600;
   margin: 10px 0px 5px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
 }
 
 .album-release {
