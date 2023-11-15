@@ -1,1 +1,1 @@
-[spotify.jorgenlt.me](http://spotify.jorgenlt.me)
+[spotify.jorgenlt.no](http://spotify.jorgenlt.no)
